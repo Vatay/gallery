@@ -1,16 +1,10 @@
-# gallery
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h3 align="center">Галерея фотографій з unsplash</h3>
+<h4>Додаток робився в якості тестового завдання</h4>
+<p>При розробці використовувався провайдер, для збереження списку з галереєю, щоб ще раз з ним попрактикуватися. Хоча тут можна було обійтись без нього використавши асинхронну функуцію для та FutureBuilder</p>
+<p>Для отримання картинок та даних використовувався пакет http. Запит на сервер спочатку відправляється з одним ключем, якщо поверне помилку, то відправить запит з ключем номер2</p>
+<p>Створюємо клас для потрібних даних зображення, потрібні 4 поля (опис, автор, маленька і велика картинка)</p>
+<p>Отримані дані парс і поміщаємо в список. Якщо у картинки немає опису, то підставиться альтернативний текст.</p>
+<p>На першому екрані перевіряємо чи пустий список і якщо дані є то відображаємо його через GridView, інакше крутиться CircularProgressIndicator</p>
+<p>Маленькі фото завантажуються швидко тому перев'юшок їм не робив, а велике завантажується довго тому додав йому значок завантаження</p>
+<p>Якщо ім'я автора або опис буде занадто довгим, воно буде обрізане і додано три крапки.</p>
+<img src="https://github.com/Vatay/gallery/blob/7a33cba5cde585f56cfeb9a01b16afdd65370fd8/prev.gif" alt="prev.gif">
